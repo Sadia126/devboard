@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Questions and Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 grid justify-center items-centet">
+    <!-- navber-->
+    <div
+      class="flex justify-between items-center bg-white p-4 mt-6 rounded shadow h-[70px]"
+    >
+      <div class="flex items-center space-x-2">
+        <img src="/assets/logo.png" class="w-7 h-7" />
+        <h3 class="font-bold text-xl">
+          <span class="text-gray-400">Dev</span> board
+        </h3>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button id="back" class="bg-blue-800 text-white px-3 py-1 rounded-lg">
+          Back Desk
+        </button>
+      </div>
+    </div>
+    <!--question section-->
+    <div
+      class="bg-blue-50 rounded-lg shadow-xl w-2/2 mt-4 p-4 text-left space-y-6"
+    >
+      <!-- Question 1 -->
+      <div class="shadow-lg p-6 rounded-lg bg-white mb-6">
+        <div class="bg-blue-50 rounded-lg pl-6">
+          <p
+            class="font-semibold text-gray-800 text-lg mb-4 border-b-2 border-gray-300 pb-4"
+          >
+            1. What are the different ways to select an element in the DOM?
+          </p>
+          <p class="text-gray-700">
+            - <code>getElementById()</code><br />
+            - <code>getElementsByClassName()</code><br />
+            - <code>getElementsByTagName()</code><br />
+            - <code>querySelector()</code><br />
+            - <code>querySelectorAll()</code>
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="shadow-lg p-6 rounded-lg bg-white mb-6">
+        <div class="bg-blue-50 rounded-lg pl-6">
+          <p
+            class="font-semibold text-gray-800 text-lg mb-4 border-b-2 border-gray-300 pb-4"
+          >
+            2. What is the difference between innerHTML, innerText, and
+            textContent?
+          </p>
+          <p class="text-gray-700">
+            - <b>innerHTML:</b> Returns or sets the HTML content, including
+            tags.<br />
+            - <b>innerText:</b> Returns or sets visible text, excluding hidden
+            text.<br />
+            - <b>textContent:</b> Returns or sets all text, including hidden
+            text.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="shadow-lg p-6 rounded-lg bg-white mb-6">
+        <div class="bg-blue-50 rounded-lg pl-6">
+          <p
+            class="font-semibold text-gray-800 text-lg mb-4 border-b-2 border-gray-300 pb-4"
+          >
+            3. What is event delegation in the DOM?
+          </p>
+          <p class="text-gray-700">
+            - Event delegation is when a parent element handles events for its
+            child elements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="shadow-lg p-6 rounded-lg bg-white mb-6">
+        <div class="bg-blue-50 rounded-lg pl-6">
+          <p
+            class="font-semibold text-gray-800 text-lg mb-4 border-b-2 border-gray-300 pb-4"
+          >
+            4. What is event bubbling in the DOM?
+          </p>
+          <p class="text-gray-700">
+            - Event bubbling is when an event propagates from the innermost
+            element to the outer elements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="shadow-lg p-6 rounded-lg bg-white mb-6">
+        <div class="bg-blue-50 rounded-lg pl-6">
+          <p
+            class="font-semibold text-gray-800 text-lg mb-4 border-b-2 border-gray-300 pb-4"
+          >
+            5. How do you create, add, and remove elements using JavaScript?
+          </p>
+          <p class="text-gray-700">
+            - <b>Create:</b> Use <code>document.createElement()</code><br />
+            - <b>Add:</b> Use <code>appendChild()</code><br />
+            - <b>Remove:</b> Use <code>removeChild()</code>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("back").addEventListener("click", function () {
+        window.location.href = "./index.html";
+      });
+    </script>
+  </body>
+</html>
