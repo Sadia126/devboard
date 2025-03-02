@@ -38,7 +38,7 @@ document.getElementById("color-btn").addEventListener("click", function () {
   
       const formattedTime = `${hours}:${minutes}:${seconds} ${ampm}`;
   
-      newtext.innerHTML += `<p class='text-lg space-y-2 border-b mb-2 mt-4 pb-2'>
+      newtext.innerHTML += `<p class='bg-[#F4F7FF] p-2 opacity-50 text-lg space-y-2 border-b mb-2 mt-4 pb-2'>
         You have completed the task ${h2} at ${formattedTime}
       </p>`;
   
@@ -68,4 +68,3 @@ document.getElementById("color-btn").addEventListener("click", function () {
   const today = new Date();
   const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
   dateElement.textContent = today.toLocaleDateString('en-US', options);
-  
